@@ -1,5 +1,9 @@
 # Rsbuild Shadcn Boilerplate
 
+A boilerplate project for building React applications with Rsbuild and Shadcn UI.
+
+![intro](./intro.png)
+
 ## Setup
 
 Install the dependencies:
