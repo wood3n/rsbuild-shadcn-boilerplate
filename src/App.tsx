@@ -3,7 +3,7 @@ import Home from "@/home";
 
 const App = () => {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="project-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="project-ui-theme">
       <Home />
     </ThemeProvider>
   );

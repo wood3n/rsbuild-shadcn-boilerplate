@@ -47,7 +47,7 @@ const Home = () => {
             </form>
           </CardContent>
           <CardFooter className="flex-col gap-2">
-            <Button type="submit" className="w-full">
+            <Button type="submit" variant="default" className="w-full">
               Login
             </Button>
           </CardFooter>

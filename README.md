@@ -34,7 +34,8 @@ pnpm preview
 
 ## Learn more
 
-To learn more about Rsbuild, check out the following resources:
+To learn more about Rsbuild and Shadcn UI, check out the following resources:
 
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
+- [Rsbuild documentation](https://rsbuild.rs) - Rsbuild features and APIs.
+- [Shadcn UI documentation](https://ui.shadcn.com/docs/components) - Shadcn UI components documentation.
+- [Radix UI documentation](https://www.radix-ui.com/primitives/docs/overview/introduction) - Radix UI primitives documentation.
