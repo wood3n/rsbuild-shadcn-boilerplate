@@ -31,7 +31,8 @@ export default tseslint.config([
     },
     rules: {
       // https://github.com/shadcn-ui/ui/issues/1534
-      "react-refresh/only-export-components": ["warn", { allowConstantExport: true }]
+      "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      "@eslint-react/no-context-provider": 0
     }
   },
   {

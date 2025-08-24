@@ -18,10 +18,19 @@ export function ThemeProvider({
     root.classList.remove("light", "dark");
 
     if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      const systemTheme = mediaQuery.matches ? "dark" : "light";
       root.classList.add(systemTheme);
-      return;
+
+      const changeTheme = (e: MediaQueryListEvent) => {
+        root.classList.add(e.matches ? "dark" : "light");
+      };
+
+      mediaQuery.addEventListener("change", changeTheme);
+
+      return () => {
+        mediaQuery.removeEventListener("change", changeTheme);
+      };
     }
 
     root.classList.add(theme);
