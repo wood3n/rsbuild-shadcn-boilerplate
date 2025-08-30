@@ -12,8 +12,8 @@
 
 - **语言与框架**: TypeScript, React
 - **CSS 框架**: TailwindCSS
-- **UI 组件库**: shadcn ui
-- **构建工具**: rsbuild
+- **UI 组件库**: Shadcn UI
+- **构建工具**: Rsbuild
 
 ## 特性
 
@@ -24,6 +24,8 @@
 - 使用 EsLint、Prettier 进行代码规范检查和格式化
 
 ## 安装与使用
+
+确保已安装 [Node.js](https://nodejs.org/) 和 [pnpm](https://pnpm.io/)。
 
 1. 克隆仓库：
    ```bash
