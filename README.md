@@ -27,9 +27,9 @@
 
 确保已安装 [Node.js](https://nodejs.org/) 和 [pnpm](https://pnpm.io/)。
 
-1. 克隆仓库：
+1. 基于 GitHub 模板创建仓库或者克隆项目到本地：
    ```bash
-   git clone <仓库地址>
+   git clone git@github.com:wood3n/rsbuild-shadcn-boilerplate.git
    cd rsbuild-shadcn-boilerplate
    ```
 2. 安装依赖（确保已安装 pnpm）：
