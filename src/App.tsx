@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/context/theme";
 import Home from "@/home";
 
 const App = () => {

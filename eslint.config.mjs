@@ -2,6 +2,7 @@ import tseslint from "typescript-eslint";
 
 import js from "@eslint/js";
 import { globalIgnores } from "eslint/config";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 
 import jsxA11y from "eslint-plugin-jsx-a11y";
@@ -13,7 +14,7 @@ import unusedImports from "eslint-plugin-unused-imports";
 
 import eslintReact from "@eslint-react/eslint-plugin";
 
-export default tseslint.config([
+export default defineConfig([
   globalIgnores(["dist"]),
   {
     files: ["**/*.{ts,tsx}"],
@@ -94,5 +95,16 @@ export default tseslint.config([
       ]
     }
   },
-  eslintPluginPrettierRecommended
+  eslintPluginPrettierRecommended,
+  {
+    files: ["**/*.{js,mjs,cjs}"],
+    extends: [tseslint.configs.disableTypeChecked],
+    rules: {
+      // turn off other type-aware rules
+      "other-plugin/typed-rule": "off",
+
+      // turn off rules that don't apply to JS code
+      "@typescript-eslint/explicit-function-return-type": "off"
+    }
+  }
 ]);

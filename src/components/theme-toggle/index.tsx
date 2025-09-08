@@ -7,8 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-
-import { useTheme } from "../theme-provider/use-theme";
+import { useTheme } from "@/context/theme";
 
 const themeIcons = {
   light: <Sun />,
